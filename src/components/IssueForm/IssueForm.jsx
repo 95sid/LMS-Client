@@ -3,7 +3,7 @@ import { useState } from "react";
 import axios from "axios";
 import { useNavigate, Link} from "react-router-dom";
 
-const API_URL = "http://localhost:8080/LMS/LoanBook/issue";
+const API_URL = "https://brilliant-spontaneity-production.up.railway.app/LMS/LoanBook/issue";
 
 export default function IssueForm() {
   const [formData, setFormData] = useState({

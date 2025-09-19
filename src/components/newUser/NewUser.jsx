@@ -2,8 +2,9 @@ import styles from "./NewUser.module.css";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
+ 
 
-const API_URL = "http://localhost:8080/LMS/User";
+const API_URL = "https://brilliant-spontaneity-production.up.railway.app/LMS/User";
 export default function NewUser() {
   const [formData, setFormData] = useState({
     first_name: "",

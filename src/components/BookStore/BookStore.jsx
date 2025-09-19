@@ -10,7 +10,7 @@ export default function BookStore() {
 
   useEffect(()=>{ 
     async function fetchAllBookData(){
-      let allData = await axios.get("http://localhost:8080/LMS/Book");
+      let allData = await axios.get("https://brilliant-spontaneity-production.up.railway.app/LMS/Book");
       setData(allData.data.data);
     }
     fetchAllBookData();
@@ -25,7 +25,7 @@ export default function BookStore() {
       alert("Enter The Input or Reload the Page....") 
     }
     else{
-      let currBookData = await axios.get(`http://localhost:8080/LMS/Book/${currBook}`);
+      let currBookData = await axios.get(`https://brilliant-spontaneity-production.up.railway.app/LMS/Book/${currBook}`);
       setData(currBookData.data.data);
     }
   }
